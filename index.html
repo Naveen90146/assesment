@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border: 2px solid #3def93;
+            /* Set the border color to green for the right section */
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .important-text {
+            margin-top: 10px;
+        }
+
+        .input-container {
+            margin-bottom: 15px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid green;
+            /* Set the border color to green for the input fields */
+            border-radius: 15px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            color: rgb(48, 186, 154);
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .button {
+            background-color: purple;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 180px;
+        }
+
+        .button:hover {
+            background-color: #6b35a0;
+        }
+
+        .learn-more-button {
+            background-color: pink;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            width: 180px;
+        }
+
+        .learn-more-button:hover {
+            background-color: #dc370e;
+        }
+
+        .login-via-twitter {
+            background-color: #1da1f2;
+        }
+
+        .login-button {
+            color: #1da1f2;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .or-text {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Generate </h1>
+            <h1>Awesome Web </h1>
+            <h1>Pages</h1><br>
+            <h6 class="important-text">The most important part of the startup<br> is the samples. The samples from a set
+                of 25 usable pages<br> you can use as is or you can add new blocks.</h6>
+            <button class="learn-more-button">Learn More</button>
+        </div>
+        <div class="right-section">
+            <h2>Sign Up Now</h2>
+            <div class="input-container">
+                <input type="text" placeholder="Your email">
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Your password">
+            </div>
+            <label class="checkbox-label">
+                <input type="checkbox" id="agree-checkbox">
+                <span>I agree to all Terms of Service</span>
+            </label><br>
+            <button class="button">Sign In</button>
+            <p class="or-text">---or---</p>
+            <button class="login-via-twitter button">Login Via Twitter</button>
+            <p>Do you have an account? <button class="login-button">Sign In</button></p>
+        </div>
+    </div>
+</body>
+
+</html>
